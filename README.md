@@ -12,6 +12,10 @@
 
 
 ## MYSQL (MariaDB)
+
+> #### 동적 쿼리
+> EMPLY_SQ = ${ EMPLY_SQ } ( 이런식으로 작성 )
+
 > #### SELECT 사용법
 ```sql
 select              (칼럼명)
