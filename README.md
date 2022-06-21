@@ -38,6 +38,10 @@ EMPLY_ACCT = '1002-979-001543-12'     (칼럼명 = 변경값)
 where EMPLY_SQ = 202                  WHERE (PRIMARY KEY) = (변경할 키 값)
 ```
 
-
-
-
+> #### DELETE 사용법
+```sql
+delete from
+tb_eep_emply_m  ( 테이블 명 )
+where
+EMPLY_SQ = 202  ( 지울 값 PRIMARY KEY )
+```
