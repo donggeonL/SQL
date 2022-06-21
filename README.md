@@ -13,3 +13,9 @@
 
 ## MYSQL (MariaDB)
 > #### SELECT 사용법
+> ```
+> select `EMPLY_ACCT`,
+`EMPLY_BNK`,
+`EMPLY_ID`
+from tb_eep_emply_m
+> ```
