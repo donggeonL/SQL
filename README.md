@@ -14,8 +14,9 @@
 ## MYSQL (MariaDB)
 > #### SELECT 사용법
 ```sql
-select `EMPLY_ACCT`,
+select              (칼럼명)
+`EMPLY_ACCT`,
 `EMPLY_BNK`,
 `EMPLY_ID`
-from tb_eep_emply_m
+from tb_eep_emply_m (테이블 명)
 ```
