@@ -9,3 +9,7 @@
 
 > #### DB 내용 보기
 > db.db(이름).find();
+
+
+## MYSQL (MariaDB)
+> #### SELECT 사용법
