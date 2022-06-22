@@ -49,3 +49,15 @@ tb_eep_emply_m  ( 테이블 명 )
 where
 EMPLY_SQ = 202  ( 지울 값 PRIMARY KEY )
 ```
+
+> #### LIKE CONCAT 사용법 검색기능으로 많이 사용한다.
+```sql
+select 
+`EMPLY_SQ` ,                (칼럼명)
+`EMPLY_BNK` ,               (칼럼명)
+`EMPLY_ACCT`,               (칼럼명)
+`EMPLY_NM`                  (칼럼명)
+from tb_eep_emply_m         (DB명)
+where `EMPLY_NM`            (검색할 칼럼 명)
+LIKE CONCAT('%', '김김김' , '%')         (MYSQL에서의 방식 >>> 동적쿼리 사용 할 시 >>> EMPLY_NM LIKE CONCAT('%', #{KEYWORD}, '%') )
+```
