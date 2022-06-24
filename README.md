@@ -68,3 +68,9 @@ from tb_eep_emply_m         (DB명)
 where `EMPLY_NM`            (검색할 칼럼 명)
 LIKE CONCAT('%', '김김김' , '%')         (MYSQL에서의 방식 >>> 동적쿼리 사용 할 시 >>> EMPLY_NM LIKE CONCAT('%', #{KEYWORD}, '%') )
 ```
+
+> #### 기존 생성되어있는 칼럼에 Auto_Increment 설정하기
+```sql
+ALTER TABLE tb_eep_crprtn_card_m                        ( 테이블 명 )
+MODIFY COLUMN CRPRTN_CARD_SQ  bigint auto_increment;    ( 칼럼 명 + 오토인크리먼트 숫자로 할거기 때문에 int OR bigint 로 자료형 설정 )
+```
