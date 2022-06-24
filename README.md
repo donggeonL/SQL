@@ -23,6 +23,22 @@
 > #### 동적 쿼리
 > EMPLY_SQ = ${ EMPLY_SQ } ( 이런식으로 작성 )
 
+> #### TABLE 생성하기
+```sql
+create table tb_eep_crprtn_card_m (                      ( 테이블 명 설정 )
+CRPRTN_CARD_SQ bigint(21) not null primary key,          ( 칼럼 설정 SQ는 프라이머리키로 primary key 설정해주기 )
+CRPRTN_CARD_BANK varcharacter(50) not null,
+CRPRTN_CARD_NUM bigint(21) not null,
+CRPRTN_CARD_USR_NM varcharacter(50) not null,
+CRPRTN_CARD_USR_DEPT varcharacter(50) not null,
+CRPRTN_CARD_USR_PST varcharacter(50) not null,
+CRPRTN_CARD_USE_DT varcharacter(50) not null,
+CRPRTN_CARD_CNT varcharacter(1000) not null,
+CRPRTN_CARD_USE_PRC bigint(21) not null,
+CRPRTN_CARD_NOTE varcharacter(1000) not null
+);
+```
+
 > #### SELECT 사용법
 ```sql
 select              (칼럼명)
