@@ -90,3 +90,8 @@ LIKE CONCAT('%', '김김김' , '%')         (MYSQL에서의 방식 >>> 동적쿼
 ALTER TABLE tb_eep_crprtn_card_m                        ( 테이블 명 )
 MODIFY COLUMN CRPRTN_CARD_SQ  bigint auto_increment;    ( 칼럼 명 + Auto_Increment 테이블설계서를 보고 자료형 붙여주기 >> 때문에 int OR bigint 로 자료형 설정 )
 ```
+
+> #### 기존 생성되어있는 칼럼의 자료형 변경
+```sql
+alter table ( 테이블 명 ) modify ( 칼럼 명 ) varcharacter(50)( 변경하고자 하는 자료형으로 변경 );
+```
