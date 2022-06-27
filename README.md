@@ -48,6 +48,25 @@ select              (칼럼명)
 from tb_eep_emply_m (테이블 명)
 ```
 
+> #### SELECT 게시판에서 많이 사용되는 PRIMARYKEY 하나 들고오기
+```sql
+	        SELECT
+	        	CRPRTN_CARD_SQ,
+				CRPRTN_CARD_BANK,
+				CRPRTN_CARD_NUM,
+				CRPRTN_CARD_USR_NM,
+				CRPRTN_CARD_USR_DEPT,
+				CRPRTN_CARD_USR_PST,
+				CRPRTN_CARD_USE_DT,
+				CRPRTN_CARD_CNT,
+				CRPRTN_CARD_USE_PRC,
+				CRPRTN_CARD_NOTE
+	        FROM 
+	        	est_eep_db.tb_eep_crprtn_card_m
+	        WHERE
+	        	CRPRTN_CARD_SQ = #{crprtnCardSq} (WHERE 문으로 동적쿼리 사용하여 가져오기)
+```
+
 > #### INSERT 사용법
 ```sql
 insert into tb_eep_emply_m (`EMPLY_ACCT`, `EMPLY_BNK`, `EMPLY_ID`)
